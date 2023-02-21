@@ -10,11 +10,11 @@ public class UserService {
         this.userRepository = userRepository;
     }
 
-    public List<User> getAll{
+    public List<User> getAll(){
         return userRepository.findAll();
     }
 
-    public User getUserById{
-        return userRepository.findById();
+    public User getUserById(long id){
+        return userRepository.findById(id);
     }
 }
